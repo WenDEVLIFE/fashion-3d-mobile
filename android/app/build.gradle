@@ -19,6 +19,7 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
+    namespace = "com.example.shop_us"
     compileSdkVersion 34
     ndkVersion flutter.ndkVersion
 
@@ -36,9 +37,9 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.quomodosoft.shopus"
-        minSdkVersion 22
-        targetSdkVersion flutter.targetSdkVersion
+        applicationId "com.example.shop_us"
+        minSdkVersion 26 // Android 8 (Oreo)
+        targetSdkVersion 34 // Android 15 (Tiramisu)
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
